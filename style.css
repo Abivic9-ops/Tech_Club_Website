@@ -1104,7 +1104,7 @@ button:hover {
     transition: 500ms ease;
     animation-name: spin;
     animation-duration: 2s;
-    animation-iteration-count: 7;
+    animation-iteration-count: infinite;
     /* animation-delay: 1s; */
     box-shadow: 0 0 0.3rem #37a1f2;
 }
