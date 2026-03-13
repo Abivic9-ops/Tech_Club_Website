@@ -1127,3 +1127,116 @@ button:hover {
         scale: 0.5;
     }
 }
+
+
+
+/* Styling of the ABOUT PAGE */
+
+.about{
+    padding: 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+
+.about-grid-container{
+    display: grid;
+    grid-template-columns: 320px 320px 250px 250px;
+    grid-template-rows: 90px 90px 100px 100px 100px 100px;
+    gap: 1.5em;
+    grid-template-areas:
+        "about-box-1 about-box-1 about-box-2 about-box-3"
+        "about-box-1 about-box-1 about-box-2 about-box-3"
+        "about-box-1 about-box-1 about-box-2 about-box-3"
+        "about-box-5 about-box-5 about-box-5 about-box-4"
+        "about-box-5 about-box-5 about-box-5 about-box-4"
+        "about-box-5 about-box-5 about-box-5 about-box-4"
+
+    ;
+    padding: 60px;
+    justify-content: center;
+
+}
+
+.about-box-1{
+    background: #0a365d;
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.about-content h2{
+background-image: url(images/Image-trial.jpg);
+padding: 12px;
+color: #ffffff;
+border-radius: 35px;
+font-size: 23px;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 80%;
+margin-bottom: 10px;
+
+}
+
+.about-content i{
+    font-size: 25px;
+    color: #fff;
+    display:inline-flex;
+    margin-top: 10px;
+}
+
+.about-content p{
+    font-size:20px ;
+    color: #000;
+}
+
+
+
+
+
+
+
+.about-box-2{
+     background: #12f7ff;
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+        border-radius: 35px;
+font-size: 20px;
+color: #000;
+}
+.group-btn{
+    
+}
+
+.about-box-3{
+background:#12f7ff;
+ padding: 35px;
+    justify-content: center;
+    align-items: center;
+        border-radius: 35px;
+
+}
+
+.about-box-4{
+ padding: 35px;
+    justify-content: center;
+    align-items: center;
+    background: #12f7ff;
+        border-radius: 35px;
+
+}
+
+.about-box-5{
+    background-image: url();
+     padding: 35px;
+    justify-content: center;
+    align-items: center;
+        border-radius: 35px;
+
+}
