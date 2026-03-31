@@ -14,7 +14,7 @@
 
 <body>
 
-     <!-- Header Section entailing the Navigation Bar -->
+    <!-- Header Section entailing the Navigation Bar -->
     <div class="container" id="container">
         <header class="header">
             <!-- Navbar Section -->
@@ -24,8 +24,8 @@
             <ul class="navlist">
                 <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
                 <li> <a href="about.html"><i class='bx bx-user-circle'></i> About</a></li>
-                <li><a href="contact.html"><i class='bx bxs-phone'></i> Contact</a></li>
                 <li><a href="projects.html"><i class='bx bxs-briefcase'></i> Projects</a></li>
+                <li><a href="contact.html"><i class='bx bxs-phone'></i> Contact</a></li>
             </ul>
 
         </header>
@@ -34,40 +34,59 @@
     <!-- THE CONTENT PART OF THE PAGE -->
     <section class="page-intro">
         <div class="intro-content">
-            <i class='bx bx-universal-access'></i>Tech Club
+            <i class='bx bxl-flutter'></i>Tech Club
         </div>
 
         <div class="intro-text">
             <h1 class="intro-title">
-        Let's Build The Future</h1>
-        <h2>Together</h2>
+                Let's Build The Future</h1>
+            <h2><i class='bx bxs-star-half'></i>Together<i class='bx bx-group'></i></h2>
 
             <p>
-                Join a community of passionate developers, designers and innovators.Whether you're just starting out or ready to lead, there's a place for you here!
+                Join a community of passionate developers, designers and innovators.Whether you're just starting out or
+                ready to lead, there's a place for you here!
             </p>
         </div>
-        <div class="info-box">
-            <h5>500+Members</h5>
+        <div class="info-like-button">
+            <div class="like-button">
+                <h5><i class='bx bxs-user-pin'></i>250+ Members</h5>
+            </div>
+
+            <div class="like-button">
+                <h5><i class='bx bxs-briefcase-alt-2'></i>12+Projects</h5>
+            </div>
+
+            <div class="like-button">
+                <h5><i class='bx bx-trending-up'></i>20+Events/Year</h5>
+            </div>
+
         </div>
+
+        <!-- Ready to get started container -->
+        <div class="get-started">
+            <h3>Ready to Get Started?</h3>
+            <p>Fill out the form below and become part of something amazing</p>
+        </div>
+
     </section>
 
     <section class="hero-section">
         <form class="form-container">
 
             <div class="hero-title">
-                <div class="contact-icon">
-                    <i class='bx bxs-paper-plane'></i>
+                <div class="form-icon">
+                    <i class='bx bx-code'></i>
                 </div>
                 <div class="title-text">
-                    <h2>Contact Us</h2>
-                    <p>We'd love to hear from you. Fill out the form below and we'll be in touch.</p>
+                    <h2>Join the Innovation</h2>
+                    <p>Ready to level up your tech game? Let's build something amazing together! </p>
                 </div>
             </div>
 
             <div class="hero-main">
                 <!-- The Personal Info part of the form -->
                 <div class="personal-info">
-                    <h3>Personal Information</h3>
+                    <h3><i class='bx bx-group'></i>Tell Us About Yourself</h3>
                     <div class="personal-info-fields">
                         <div class="persona-field">
                             <label for="Full Name">Full Name*</label><br><input type="text" name="Full Name"
@@ -93,8 +112,8 @@
                         </div>
                         <div class="persona-field">
 
-                            <label for="Company Name">Company Name*</label><br><input type="text" name="Company Name"
-                                placeholder="Delamere Creameries" required><br>
+                            <label for="Institution">Institution*</label><br><input type="text" name="Institution Name"
+                                placeholder="MIT/University of Nairobi" required><br>
                         </div>
                         <div class="persona-field">
 
@@ -105,58 +124,178 @@
 
                 </div>
 
-                <!-- The Purpose of Contact Section of the form -->
-                <div class="purpose">
-                    <h3>Purpose of Contact</h3>
-                    <div class="purpose-fields">
-                        <label>Inquiry Type*</label><br>
+                <!-- Membership details -->
+                <div class="membership">
+                    <h3><i class='bx bx-user-pin'></i>Membership Details</h3>
+                    <div class="membership-fields">
+                        <label>How would you like to engage?*</label><br>
                         <select id="inquiry" required>
-                            <option value="">Select an Option</option>
+                            <option value="">Choose your path...</option>
                             <option value="general">General Inquiry</option>
-                            <option value="hosting-request">Hosting Request</option>
-                            <option value="technical-support">Technical Support</option>
-                            <option value="partnership">Patnership Opportunity</option>
+                            <option value="join-request">Join the club</option>
+                            <option value="partnership">Partner with us</option>
+                            <option value="Event-host">Participate in events</option>
                         </select><br>
-
+                        <!-- 
                         <label>Message</label><br><textarea rows="3"
                             placeholder="Tell us more aout your inquiry"></textarea> <br>
+                    </div> -->
+
+                        <label>Area of Interest*</label><br>
+                        <select id="inquiry" required>
+                            <option value="">What excites you?</option>
+                            <option value="webdev">Web Development</option>
+                            <option value="skills">Programming Skills</option>
+                            <option value="projects">Innovation Projects</option>
+                            <option value="competitions">Tech Competitions</option>
+                            <option value="IOT">Internet of Things</option>
+                            <option value="APPS">Mobile App Development</option>
+                        </select><br>
+
+                        <label>What are you looking for?*</label><br>
+                        <select id="inquiry" required>
+                            <option value="">Select one...</option>
+                            <option value="mentorship">Get Mentorship</option>
+                            <option value="workshops">Attend Workshops</option>
+                            <option value="observe">BenchMarking</option>
+                            <option value="learn">Learn a skill</option>
+
+                        </select><br>
+
+                        <label>Skill Level*</label><br>
+                        <select id="inquiry" required>
+                            <option value=""> Where are you at?</option>
+                            <option value="beginner">Beginner-Jst getting started</option>
+                            <option value="intermediate">Intermediate-Building Skills</option>
+                            <option value="pro">Advanced-Ready to lead</option>
+                        </select><br>
+
+                        <label for="status">Current Status</label><br><input type="text" name="status"
+                            placeholder="eg.,Student,Professional, Teacher, Idealist"><br>
+
+                    </div>
+                    <!-- Share your vision section -->
+                    <div class="vision-share">
+                        <h3><i class='bx bxs-paper-plane'></i>Share Your Vision</h3>
+                        <div class="vision-fields">
+                            <label>Tell us more about yourself and your goals</label><br><textarea rows="6"
+                                placeholder="What drives you?What do you want to achieve?Any cool projects you're working on?Let's hear it!"></textarea>
+                            <br>
+                        </div>
+
+                        <div class="your-portfolio">
+                            <label for="status"><i class='bx bx-upload'></i>Project Link/
+                                Portfolio(Optional)</label><br><input type="text" name="link"
+                                placeholder="https://github.com/yourusername/awesome-project/portfoio-link"><br>
+
+                        </div>
+
+                    </div>
+
+                    <!-- The Trust and agreement section -->
+                    <div class="agreement-part">
+                        <h3><i class='bx bx-check-circle'></i>Agreement and Consent</h3>
+                        <label for="agreement">
+                            <input type="checkbox" required>
+                            I agree to join this amazing community and abide by the club's code of conduct.I understand
+                            that my information wil be used to process my application and keep me updated about club
+                            activities,events and opportunities.I'm ready to learn,collaborate and innovate!</label><br>
                     </div>
 
                 </div>
-
-                <!-- The Complaint section query of the form -->
-                <div class="complaint">
-                    <h3>Complaint or Issue (Optional)</h3>
-                    <div class="complaint-fields">
-                        <label>Describe your complaint or issue</label><br><textarea rows="3"
-                            placeholder="If you have any issues or complaints,describe them here"></textarea> <br>
-                    </div>
-                </div>
-
-                <!-- The Trust and agreement section -->
-                <div class="agreement-part">
-                    <h3><i class='bx bx-check-circle'></i>Trust & Privacy Agreement</h3>
-                    <label for="agreement">
-                        <input type="checkbox" required>
-                        I agree to the privacy policy and consent to the collection and processing of my personal
-                        information.I understand that my data will be handled securely and will only be used to respond
-                        to
-                        my inquiry.</label><br>
-                </div>
-
-            </div>
 
         </form>
 
         <div class="submit-btn"><i class='bx bxs-paper-plane'></i>Submit Form</div>
     </section>
 
+    <!-- The footer of the page -->
     <footer class="footer-section">
-        <div class="footer-text">
-            <p>&copy;2026 | Structured Contact Form | All Rights Reserved. </p>
+        <div class="top-footer">
+            <h3>Get In Touch</h3>
+
+            <div class="get-in-touch">
+                <div class="email-section">
+                    <div class="section-icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="side-text">
+                        <h4>Email Us</h4>
+                        <p>techclub@university.edu </p>
+                    </div>
+                </div>
+
+                <div class="location-section">
+                    <div class="section-icon">
+                       <i class='bx bx-current-location' ></i>
+                    </div>
+                    <div class="side-text">
+                        <h4>Location</h4>
+                        <p>Innovation Lab, Room 204University Campus
+                        </p>
+                    </div>
+                </div>
+
+                <div class="response-section">
+                    <div class="section-icon">
+                      <i class='bx bx-time-five' ></i>
+                    </div>
+                    <div class="side-text">
+                        <h4>Response Time</h4>
+                        <p> We respond within 24 hours</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="quick-inks">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
+                    <li> <a href="about.html"><i class='bx bx-user-circle'></i> About</a></li>
+                    <li><a href="projects.html"><i class='bx bxs-briefcase'></i> Projects</a></li>
+                    <li><a href="contact.html"><i class='bx bxs-phone'></i> Contact</a></li>
+                    <li><a href="#"><i class='bx bxs-group'></i> Team Members</a></li>
+                    <li><a href="#"> <i class='bx bx-trending-up'></i> Upcoming Events</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="social-media">
+                <div class="social-text-part">
+                    <h3>Connect with Us</h3>
+                    <p>Join our community and stay updated with the latest tech trends,events,and opportunities!</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://x.com/"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
         </div>
-        <div class="copyright">
-            <p>Privacy Policy | Terms of Service | Cookies Policy</p>
+
+        <div class="bottom-footer">
+            <div class="footer-left">
+                <div class="footer-icon">
+                    <i class='bx bxl-flutter'></i>
+                </div>
+                <div class="icon-text">
+                    <h2>Tech Club</h2>
+                    <p>Building the future one line at at a time! </p>
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <div class="right-text">
+                    <p>&copy;2026 | Tech Club | All Rights Reserved. </p>
+                </div>
+                <div class="copyright">
+                    <p>Privacy Policy | Terms of Service | Cookies Policy</p>
+                </div>
+            </div>
         </div>
 
     </footer>
