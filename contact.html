@@ -4,21 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Club Page</title>
+    <title>Contact Us | Tech Club</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
 </head>
 
 <body>
 
-    <!-- Header Section entailing the Navigation Bar -->
+    <!-- Navigation -->
     <div class="container" id="container">
         <header class="header">
-            <!-- Navbar Section -->
-            <div class="logo"> <a href="index.html"></a>
+            <div class="logo">
+                <i class='bx bx-cube-alt nexus-icon'></i>
                 <span>T</span>ech Club
             </div>
             <ul class="navlist">
@@ -27,277 +25,151 @@
                 <li><a href="projects.html"><i class='bx bxs-briefcase'></i> Projects</a></li>
                 <li><a href="contact.html"><i class='bx bxs-phone'></i> Contact</a></li>
             </ul>
-
         </header>
     </div>
 
-    <!-- THE CONTENT PART OF THE PAGE -->
-    <section class="page-intro">
-        <div class="intro-content">
-            <i class='bx bxl-flutter'></i>Tech Club
-        </div>
-
-        <div class="intro-text">
-            <h1 class="intro-title">
-                Let's Build The Future</h1>
-            <h2><i class='bx bxs-star-half'></i>Together<i class='bx bx-group'></i></h2>
-
-            <p>
-                Join a community of passionate developers, designers and innovators.Whether you're just starting out or
-                ready to lead, there's a place for you here!
-            </p>
-        </div>
-        <div class="info-like-button">
-            <div class="like-button">
-                <h5><i class='bx bxs-user-pin'></i>250+ Members</h5>
-            </div>
-
-            <div class="like-button">
-                <h5><i class='bx bxs-briefcase-alt-2'></i>12+Projects</h5>
-            </div>
-
-            <div class="like-button">
-                <h5><i class='bx bx-trending-up'></i>20+Events/Year</h5>
-            </div>
-
-        </div>
-
-        <!-- Ready to get started container -->
-        <div class="get-started">
-            <h3>Ready to Get Started?</h3>
-            <p>Fill out the form below and become part of something amazing</p>
-        </div>
-
+    <!-- Hero Section -->
+    <section class="page-hero animate-fade-in">
+        <h1>Get In Touch</h1>
+        <p>Have a question or want to join our community? Reach out to us and let's start building the future together.</p>
     </section>
 
-    <section class="hero-section">
-        <form class="form-container">
-
-            <div class="hero-title">
-                <div class="form-icon">
-                    <i class='bx bx-code'></i>
-                </div>
-                <div class="title-text">
-                    <h2>Join the Innovation</h2>
-                    <p>Ready to level up your tech game? Let's build something amazing together! </p>
-                </div>
-            </div>
-
-            <div class="hero-main">
-                <!-- The Personal Info part of the form -->
-                <div class="personal-info">
-                    <h3><i class='bx bx-group'></i>Tell Us About Yourself</h3>
-                    <div class="personal-info-fields">
-                        <div class="persona-field">
-                            <label for="Full Name">Full Name*</label><br><input type="text" name="Full Name"
-                                placeholder="John Doe" required><br>
-                        </div>
-                        <div class="persona-field">
-                            <label for="Email Address">Email Address*</label><br><input type="text" required
-                                name="Email Address" placeholder="john.doe@gmail.com"><br>
-                        </div>
-                        <div class="persona-field">
-                            <label for="Phone Number">Phone Number*</label><br><input type="text" name="Phone Number"
-                                placeholder="+254706366041" required><br>
-                        </div>
-                        <div class="persona-field">
-
-                            <label>Gender*</label><br>
-                            <select id="gender" id="gender" required>
-                                <option value="">Choose one</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="prefer-not">Rather not say</option>
-                            </select><br>
-                        </div>
-                        <div class="persona-field">
-
-                            <label for="Institution">Institution*</label><br><input type="text" name="Institution Name"
-                                placeholder="MIT/University of Nairobi" required><br>
-                        </div>
-                        <div class="persona-field">
-
-                            <label for="location"><i class='bx bx-current-location'></i>Location*</label><br><input
-                                type="text" name="Company Name" placeholder="Town,County,Country" required><br>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Membership details -->
-                <div class="membership">
-                    <h3><i class='bx bx-user-pin'></i>Membership Details</h3>
-                    <div class="membership-fields">
-                        <label>How would you like to engage?*</label><br>
-                        <select id="inquiry" required>
-                            <option value="">Choose your path...</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="join-request">Join the club</option>
-                            <option value="partnership">Partner with us</option>
-                            <option value="Event-host">Participate in events</option>
-                        </select><br>
-                        <!-- 
-                        <label>Message</label><br><textarea rows="3"
-                            placeholder="Tell us more aout your inquiry"></textarea> <br>
-                    </div> -->
-
-                        <label>Area of Interest*</label><br>
-                        <select id="inquiry" required>
-                            <option value="">What excites you?</option>
-                            <option value="webdev">Web Development</option>
-                            <option value="skills">Programming Skills</option>
-                            <option value="projects">Innovation Projects</option>
-                            <option value="competitions">Tech Competitions</option>
-                            <option value="IOT">Internet of Things</option>
-                            <option value="APPS">Mobile App Development</option>
-                        </select><br>
-
-                        <label>What are you looking for?*</label><br>
-                        <select id="inquiry" required>
-                            <option value="">Select one...</option>
-                            <option value="mentorship">Get Mentorship</option>
-                            <option value="workshops">Attend Workshops</option>
-                            <option value="observe">BenchMarking</option>
-                            <option value="learn">Learn a skill</option>
-
-                        </select><br>
-
-                        <label>Skill Level*</label><br>
-                        <select id="inquiry" required>
-                            <option value=""> Where are you at?</option>
-                            <option value="beginner">Beginner-Jst getting started</option>
-                            <option value="intermediate">Intermediate-Building Skills</option>
-                            <option value="pro">Advanced-Ready to lead</option>
-                        </select><br>
-
-                        <label for="status">Current Status</label><br><input type="text" name="status"
-                            placeholder="eg.,Student,Professional, Teacher, Idealist"><br>
-
-                    </div>
-                    <!-- Share your vision section -->
-                    <div class="vision-share">
-                        <h3><i class='bx bxs-paper-plane'></i>Share Your Vision</h3>
-                        <div class="vision-fields">
-                            <label>Tell us more about yourself and your goals</label><br><textarea rows="6"
-                                placeholder="What drives you?What do you want to achieve?Any cool projects you're working on?Let's hear it!"></textarea>
-                            <br>
-                        </div>
-
-                        <div class="your-portfolio">
-                            <label for="status"><i class='bx bx-upload'></i>Project Link/
-                                Portfolio(Optional)</label><br><input type="text" name="link"
-                                placeholder="https://github.com/yourusername/awesome-project/portfoio-link"><br>
-
-                        </div>
-
-                    </div>
-
-                    <!-- The Trust and agreement section -->
-                    <div class="agreement-part">
-                        <h3><i class='bx bx-check-circle'></i>Agreement and Consent</h3>
-                        <label for="agreement">
-                            <input type="checkbox" required>
-                            I agree to join this amazing community and abide by the club's code of conduct.I understand
-                            that my information wil be used to process my application and keep me updated about club
-                            activities,events and opportunities.I'm ready to learn,collaborate and innovate!</label><br>
-                    </div>
-
-                </div>
-
-        </form>
-
-        <div class="submit-btn"><i class='bx bxs-paper-plane'></i>Submit Form</div>
-    </section>
-
-    <!-- The footer of the page -->
-    <footer class="footer-section">
-        <div class="top-footer">
-            <h3>Get In Touch</h3>
-
-            <div class="get-in-touch">
-                <div class="email-section">
-                    <div class="section-icon">
+    <!-- Contact Section -->
+    <section class="contact-section" style="padding: 50px 10%; display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; align-items: start;">
+        
+        <!-- Info Side -->
+        <div class="contact-info glass-card animate-fade-in">
+            <h2 style="color: var(--text-color); margin-bottom: 30px;">Contact Information</h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div style="width: 50px; height: 50px; background: rgba(55, 161, 242, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--text-color);">
                         <i class='bx bx-envelope'></i>
                     </div>
-                    <div class="side-text">
-                        <h4>Email Us</h4>
-                        <p>techclub@university.edu </p>
+                    <div>
+                        <h4 style="color: #fff;">Email Us</h4>
+                        <p style="color: #94a3b8;">techclub@school.edu</p>
                     </div>
                 </div>
 
-                <div class="location-section">
-                    <div class="section-icon">
-                       <i class='bx bx-current-location' ></i>
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div style="width: 50px; height: 50px; background: rgba(55, 161, 242, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--text-color);">
+                        <i class='bx bx-map'></i>
                     </div>
-                    <div class="side-text">
-                        <h4>Location</h4>
-                        <p>Innovation Lab, Room 204University Campus
-                        </p>
-                    </div>
-                </div>
-
-                <div class="response-section">
-                    <div class="section-icon">
-                      <i class='bx bx-time-five' ></i>
-                    </div>
-                    <div class="side-text">
-                        <h4>Response Time</h4>
-                        <p> We respond within 24 hours</p>
+                    <div>
+                        <h4 style="color: #fff;">Location</h4>
+                        <p style="color: #94a3b8;">Innovation Lab, Room 204<br>University Campus</p>
                     </div>
                 </div>
 
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div style="width: 50px; height: 50px; background: rgba(55, 161, 242, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--text-color);">
+                        <i class='bx bx-phone'></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #fff;">Call Us</h4>
+                        <p style="color: #94a3b8;">+123 456 7890</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="quick-inks">
+            <div style="margin-top: 50px;">
+                <h4 style="color: #fff; margin-bottom: 20px;">Follow Us</h4>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#" style="color: #94a3b8; font-size: 24px; transition: 0.3s;" onmouseover="this.style.color='#37a1f2'" onmouseout="this.style.color='#94a3b8'"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" style="color: #94a3b8; font-size: 24px; transition: 0.3s;" onmouseover="this.style.color='#37a1f2'" onmouseout="this.style.color='#94a3b8'"><i class='bx bxl-github'></i></a>
+                    <a href="#" style="color: #94a3b8; font-size: 24px; transition: 0.3s;" onmouseover="this.style.color='#37a1f2'" onmouseout="this.style.color='#94a3b8'"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" style="color: #94a3b8; font-size: 24px; transition: 0.3s;" onmouseover="this.style.color='#37a1f2'" onmouseout="this.style.color='#94a3b8'"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="contact-form-container glass-card animate-fade-in" style="animation-delay: 0.2s;">
+            <h2 style="color: var(--text-color); margin-bottom: 30px;">Send a Message</h2>
+            <form action="#" class="modern-form">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder="John" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Doe" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Interest Area</label>
+                    <select required>
+                        <option value="" disabled selected>Select an area</option>
+                        <option value="web">Web Development</option>
+                        <option value="robotics">Robotics</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="design">UI/UX Design</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Your Message</label>
+                    <textarea rows="5" placeholder="Tell us how we can help..." required></textarea>
+                </div>
+                <button type="submit" class="discover-btn" style="width: 100%;">Send Message <i class='bx bx-send'></i></button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Detailed Modern Footer -->
+    <footer class="modern-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 20px;">
+                    <i class='bx bx-cube-alt nexus-icon'></i>
+                    <span>T</span>ech Club
+                </div>
+                <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 20px;">
+                    Empowering the next generation of innovators through technology, collaboration, and hands-on learning. We turn curiosity into creation.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
-                    <li> <a href="about.html"><i class='bx bx-user-circle'></i> About</a></li>
-                    <li><a href="projects.html"><i class='bx bxs-briefcase'></i> Projects</a></li>
-                    <li><a href="contact.html"><i class='bx bxs-phone'></i> Contact</a></li>
-                    <li><a href="#"><i class='bx bxs-group'></i> Team Members</a></li>
-                    <li><a href="#"> <i class='bx bx-trending-up'></i> Upcoming Events</a></li>
-
-
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Our Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-
-            <div class="social-media">
-                <div class="social-text-part">
-                    <h3>Connect with Us</h3>
-                    <p>Join our community and stay updated with the latest tech trends,events,and opportunities!</p>
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://x.com/"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://github.com/"><i class='bx bxl-github'></i></a>
-                </div>
+            <div class="footer-col">
+                <h3>Tech Domains</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Robotics & AI</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="contact-list">
+                    <li style="color: #94a3b8; margin-bottom: 10px;"><i class='bx bx-map' style="color: var(--text-color); margin-right: 10px;"></i> Innovation Lab, Room 204</li>
+                    <li style="color: #94a3b8; margin-bottom: 10px;"><i class='bx bx-envelope' style="color: var(--text-color); margin-right: 10px;"></i> techclub@school.edu</li>
+                    <li style="color: #94a3b8; margin-bottom: 10px;"><i class='bx bx-phone' style="color: var(--text-color); margin-right: 10px;"></i> +123 456 7890</li>
+                </ul>
             </div>
         </div>
-
-        <div class="bottom-footer">
-            <div class="footer-left">
-                <div class="footer-icon">
-                    <i class='bx bxl-flutter'></i>
-                </div>
-                <div class="icon-text">
-                    <h2>Tech Club</h2>
-                    <p>Building the future one line at at a time! </p>
-                </div>
-            </div>
-
-            <div class="footer-text">
-                <div class="right-text">
-                    <p>&copy;2026 | Tech Club | All Rights Reserved. </p>
-                </div>
-                <div class="copyright">
-                    <p>Privacy Policy | Terms of Service | Cookies Policy</p>
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tech Club | Designed for the Future | All Rights Reserved.</p>
         </div>
-
     </footer>
 
 </body>
