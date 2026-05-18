@@ -1224,8 +1224,6 @@ max-height: 120%;
   
 }
 
-
-
 .about-content h2{
 background-image: url(images/Image-trial.jpg);
 padding: 12px;
@@ -1337,8 +1335,6 @@ margin-bottom: 10px;
     }
 
 }
-
-
 
 
 .group-btn{
@@ -1500,7 +1496,6 @@ color: #000;
 
 }
 
-
 .club-history{
     display: flex;
     justify-content: flex-end;
@@ -1551,7 +1546,6 @@ color: #000;
 
 } 
 
-
 .club-start-info h2{
     font-size: 32x;
     font-weight: 700;
@@ -1567,10 +1561,8 @@ color: #000;
 }
 
 /* Styling of the core values section */
-
 .core-values{
 padding: 20px;
-/* margin: 10px; */
 justify-content: center;
 align-items: center;
 background:transparent;
@@ -1793,21 +1785,6 @@ transition: .1s ease-in-out;
 
 
 /* STYLING OF THE PROJECTS PAGE */
-/* 
-.projects-intro-box{
-    padding: 20px;
-    font-size: 20px;
-    color: #fff;
-    border-radius: 35px;
-    max-width: 500px;
-}
-
-.projects-stats{
-      padding: 20px;
-    font-size: 20px;
-    color: #fff;
-    border-radius: 35px;
-} */
 .projects-main{
  margin: 15px;
     padding: 30px;
@@ -2590,6 +2567,15 @@ justify-content: center;
     .modern-footer{
         padding: 60px 5%;
     }
+
+    .footer-grid{
+        align-items: flex-start;
+    }
+
+    .footer-col{
+        text-align: left;
+        width: 100%;
+    }
 }
 
 /* ==========================
@@ -2626,9 +2612,8 @@ justify-content: center;
 .box-2,
 .box-3,
 .box-4{
-    width: 320px;
+    width: 280px;
     padding: 15px;
-    margin-right: 50px;
 }
 
 .box-1:hover,
@@ -2643,7 +2628,11 @@ justify-content: center;
     .vision-info p{
         font-size: 1rem;
     }
-
+.home-image{
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+}
     .home-image img
     {
         transform: none;
@@ -2661,7 +2650,6 @@ justify-content: center;
 
     .features,
     .projects,
-    
     .Membership{
         padding: 20px;
         margin: 10px;
@@ -2742,6 +2730,13 @@ justify-content: center;
         height: auto;
         animation: none;
     }
+    .explore-btn{
+      padding: 16px;
+      width: 110%;
+    }   
+    .vision-info p{
+      margin-left: 15px;
+    }
 
     .about{
         padding: 15px;
@@ -2788,6 +2783,215 @@ justify-content: center;
     }
     .footer-col{
         text-align: center;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   768px
+========================= */
+
+@media (max-width: 768px){
+
+    .about{
+        padding: 15px;
+        margin: 0;
+    }
+
+    .about-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "about-box-1"
+            "about-box-2"
+            "about-box-3"
+            "about-box-4"
+            "about-box-5";
+
+        gap: 1.2em;
+        padding: 15px;
+    }
+
+    .about-image{
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .about-image img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .about-box-1,
+    .about-box-2,
+    .about-box-3,
+    .about-box-4,
+    .about-box-5{
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .about-content h2{
+        font-size: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about-content p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .about-content i{
+        font-size: 20px;
+    }
+
+    .about-box-2 h2,
+    .about-box-3 h2,
+    .about-box-4 h2{
+        font-size: 22px;
+    }
+
+    .about-box-2 h3,
+    .about-box-3 h3,
+    .about-box-4 h3{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .about-box-3 p,
+    .about-box-4 p{
+        font-size: 17px;
+    }
+
+    .group-btn,
+    .projects-btn,
+    .more-btn{
+        width: 100%;
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    /* CLUB HISTORY SECTION */
+
+    .club-history{
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .club-start-info{
+        margin: 15px;
+        margin-left: 15px;
+        padding: 30px;
+        max-width: 100%;
+        border-radius: 25px;
+    }
+
+    .club-start-info h2{
+        font-size: 26px;
+    }
+
+    .club-start-info p{
+        font-size: 16px;
+        scale: 1;
+        line-height: 1.6;
+    }
+
+    /* CONTACT PAGE RESPONSIVENESS */
+    .contact-section {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        padding: 40px 5% !important;
+    }
+}
+
+
+
+/* =========================
+   SMALL MOBILE DEVICES
+   480px
+========================= */
+
+@media (max-width: 480px){
+
+    .about{
+        padding: 10px;
+    }
+
+    .about-grid-container{
+        padding: 10px;
+        gap: 1em;
+    }
+
+    .about-box-1,
+    .about-box-2,
+    .about-box-3,
+    .about-box-4,
+    .about-box-5{
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .about-content h2{
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .about-content p{
+        font-size: 14px;
+    }
+
+    .about-content i{
+        font-size: 18px;
+    }
+
+    .about-box-2 h2,
+    .about-box-3 h2,
+    .about-box-4 h2{
+        font-size: 18px;
+    }
+
+    .about-box-2 h3,
+    .about-box-3 h3,
+    .about-box-4 h3{
+        font-size: 16px;
+    }
+
+    .about-box-3 p,
+    .about-box-4 p{
+        font-size: 14px;
+    }
+
+    .group-btn,
+    .projects-btn,
+    .more-btn{
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .club-start-info{
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .club-start-info h2{
+        font-size: 22px;
+    }
+
+    .club-start-info p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* CONTACT PAGE RESPONSIVENESS */
+    .contact-form-container form > div:first-child {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .contact-section {
+        padding: 30px 5% !important;
     }
 }
 
@@ -2875,5 +3079,28 @@ justify-content: center;
 
     .footer-bottom{
         font-size: 0.8rem;
+    }
+}
+
+/* ==========================
+   PROJECTS PAGE RESPONSIVENESS
+   ========================== */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 30px 5%;
+    }
+    .project-grid-premium {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        padding: 20px 15px;
+    }
+    .project-grid-premium {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
