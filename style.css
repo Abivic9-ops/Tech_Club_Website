@@ -2313,8 +2313,19 @@ section {
 
     .navlist a {
         display: block;
-        margin: 10px 0;
+        margin: 12px 25px;
         padding: 15px 30px;
+        font-size: 1.15rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(55, 161, 242, 0.05);
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+
+    .navlist a:hover {
+        background: rgba(55, 161, 242, 0.15);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(55, 161, 242, 0.2);
     }
 
     .navlist.open {
